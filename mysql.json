@@ -1,9 +1,9 @@
 {
     "host": "ssserver",
-    "port": ssport,
-    "user": "ssuser",
-    "password": "sspass",
-    "db": "ssdb",
+    "port": 3306,
+    "user": "ssrpanel",
+    "password": "123ZXCzxc",
+    "db": "ssrpanel",
     "node_id": ssnode,
     "transfer_mul": 1.0,
     "ssl_enable": 0,
