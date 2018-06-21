@@ -7,16 +7,7 @@ install_ssr(){
   	git clone -b master https://github.com/kuangshao11/Shadowsowcks1Click.git && mv Shadowsowcks1Click shadowsocksr && cd shadowsocksr && chmod +x setup_cymysql.sh && chmod +x ./initcfg.sh && ./setup_cymysql.sh && ./initcfg.sh
 	rm -rf Shadowsowcks1Click.sh
 	echo 'ssr安装完成'
-	sed -i -e "s/ssapi/$ssapi/g" userapiconfig.py
-	sed -i -e "s/ssserver/$ssserver/g" usermysql.json
-	sed -i -e "s/ssport/$ssport/g" usermysql.json
-	sed -i -e "s/ssuser/$ssuser/g" usermysql.json
-	sed -i -e "s/sspass/$sspass/g" usermysql.json
-	sed -i -e "s/ssdb/$ssdb/g" usermysql.json
 	sed -i -e "s/ssnode/$ssnode/g" usermysql.json
-	sed -i -e "s/ssmethod/$ssmethod/g" user-config.json
-	sed -i -e "s/ssprotocol/$ssprotocol/g" user-config.json
-	sed -i -e "s/ssobfs/$ssobfs/g" user-config.json
 	echo 'ssr配置完成'
 	chmod +x logrun.sh && ./logrun.sh
 	cd /root/
