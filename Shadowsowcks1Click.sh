@@ -39,10 +39,9 @@ install_chacha20(){
 yum -y install git
 yum -y groupinstall "Development Tools"
 clear
+echo ' 注意：此脚本基于centos7编写，其他系统可能会出问题'
 echo ' 1. 安装 SSR'
 echo ' 2. 安装 chacha20'
-echo ' 注意：此脚本基于centos7编写，其他系统可能会出问题'
-echo ' 安装 SSR'
 stty erase '^H' && read -p " 请输入数字 [1-2]:" num
  case "$num" in
  	1)
