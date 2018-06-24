@@ -26,7 +26,7 @@ install_ssr(){
 	echo '加密aes-256-cfb，协议auth_chain_a，混淆http_simple'
 	echo '单端口密码1a2b_3c4t，加密rc4-md5，协议auth_chain_a，混淆http_simple'
 }
-install_chacha20(){
+install_libsodium(){
         clear
         cd /root/
   	wget https://github.com/jedisct1/libsodium/releases/download/1.0.16/libsodium-1.0.16.tar.gz
@@ -43,13 +43,13 @@ yum -y groupinstall "Development Tools"
 clear
 echo ' 注意：此脚本基于centos7编写，其他系统可能会出问题'
 echo ' 1. 安装 SSR'
-echo ' 2. 安装 chacha20'
+echo ' 2. 安装 libsodium-1.0.16'
 stty erase '^H' && read -p " 请输入数字 [1-2]:" num
  case "$num" in
  	1)
  	install_ssr
 	;;
 	2)
-	install_chacha20
+	install_libsodium
 	;;
 esac
