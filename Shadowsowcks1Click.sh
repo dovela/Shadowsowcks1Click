@@ -23,7 +23,7 @@ install_ssr(){
 	systemctl disable firewalld.service
 	chkconfig iptables off
 	echo '已关闭iptables、firewalld，如有需要请自行配置。'
-	echo '加密aes-256-cfb，协议auth_chain_a，混淆http_simple'
+	echo '多端口加密aes-256-cfb，协议auth_chain_a，混淆http_simple'
 	echo '单端口密码1a2b_3c4t，加密rc4-md5，协议auth_chain_a，混淆http_simple'
 }
 install_libsodium(){
