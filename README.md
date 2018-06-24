@@ -25,6 +25,8 @@ chmod +x Shadowsowcks1Click.sh
 2.SSR下载并安装以后会按提示输入配置即可。
   mysql服务器地址：SSR和数据库在同一台服务器输入127.0.0.1，远程节点填写数据库IP。
   SSR节点ID（nodeid）:前端建立节点时的ID。
+  是否仅单端口（true | false）:true仅单端口，false单端口多端口共存。
+  单端口（oneport）：单端口号，80、443或者随便想使用的端口。
 3.配置完成会关闭iptables、firewalld，大佬请自行设置。
 4.默认多端口加密aes-256-cfb，协议auth_chain_a，混淆http_simple
 5.默认单端口密码1a2b_3c4t，加密rc4-md5，协议auth_chain_a，混淆http_simple
