@@ -10,7 +10,7 @@
 <br>脚本在centos7上测试通过，其他发行版未测试。
 ## 使用方法
 ````
-wget -N --no-check-certificate https://raw.githubusercontent.com/kuangshao11/Shadowsowcks1Click/master/Shadowsowcks1Click.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/dovela/Shadowsowcks1Click/master/Shadowsowcks1Click.sh
 chmod +x Shadowsowcks1Click.sh
 ./Shadowsowcks1Click.sh
 ````
