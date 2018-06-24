@@ -5,7 +5,7 @@ install_ssr(){
 	stty erase '^H' && read -p " mysql服务器地址:" ssserver
 	stty erase '^H' && read -p " SSR节点ID（nodeid）:" ssnode
 	stty erase '^H' && read -p " 是否仅单端口（true | false）:" switch
-	stty erase '^H' && read -p " 单端口（oneport）:" oneport
+	stty erase '^H' && read -p " 单端口（0~65535）:" oneport
 	clear
   	git clone -b master https://github.com/kuangshao11/Shadowsowcks1Click.git && mv Shadowsowcks1Click shadowsocksr && cd shadowsocksr && chmod +x setup_cymysql.sh && chmod +x ./initcfg.sh && ./setup_cymysql.sh && ./initcfg.sh
 	rm -rf Shadowsowcks1Click.sh
