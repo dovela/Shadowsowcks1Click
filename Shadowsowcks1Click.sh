@@ -22,9 +22,11 @@ install_ssr(){
 	service firewalld stop
 	systemctl disable firewalld.service
 	chkconfig iptables off
+	echo -e '*/10 * * * * /root/shadowsocksr/run.sh' >> /var/spool/cron/root
 	echo '已关闭iptables、firewalld，如有需要请自行配置。'
 	echo '多端口加密aes-256-cfb，协议auth_chain_a，混淆http_simple'
 	echo '单端口密码1a2b_3c4t，加密rc4-md5，协议auth_chain_a，混淆http_simple'
+	echo '已添加自动运行任务,每10分钟执行一次run.sh'
 }
 install_libsodium(){
         clear
@@ -38,7 +40,7 @@ install_libsodium(){
 	echo 'libsodium安装完成'
 }
 
-yum -y install git
+yum -y install git crontabs
 yum -y groupinstall "Development Tools"
 clear
 echo ' 注意：此脚本基于centos7编写，其他系统可能会出问题'
