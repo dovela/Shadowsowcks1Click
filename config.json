@@ -6,10 +6,10 @@
     "local_port": 1080,
 
     "password": "m",
-    "method": "aes-256-cfb",
+    "method": "none",
     "protocol": "auth_chain_a",
     "protocol_param": "",
-    "obfs": "http_simple",
+    "obfs": "plain",
     "obfs_param": "",
     "speed_limit_per_con": 0,
     "speed_limit_per_user": 0,
@@ -18,7 +18,7 @@
     "oneport": {
         "passwd": "1a2b_3c4t",
         "method": "rc4-md5",
-        "protocol": "auth_chain_a",
+        "protocol": "auth_sha1_v4",
         "protocol_param": "#",
         "obfs": "http_simple",
         "obfs_param": ""
