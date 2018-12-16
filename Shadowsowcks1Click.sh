@@ -25,7 +25,7 @@ install_ssr(){
 	echo -e '*/10 * * * * /root/shadowsocksr/run.sh' >> /var/spool/cron/root
 	echo '已关闭iptables、firewalld，如有需要请自行配置。'
 	echo '多端口加密none，协议auth_chain_a，混淆plain'
-	echo '单端口密码1a2b_3c4t，加密rc4-md5，协议auth_sha1_v4，混淆http_simple'
+	echo '单端口密码1a2b_3c4t，加密none，协议auth_chain_a，混淆plain'
 	echo '已添加自动运行任务,每10分钟执行一次run.sh'
 }
 install_libsodium(){
